@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mikeb.lostandfound.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width = "365dp"
+        android:layout_height= "wrap_content"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <TextView
+            android:id="@+id/lostTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fill out the following credentials:"
+            android:textSize="10pt"
+            android:paddingTop="35dp"
+            android:paddingBottom="35dp"/>
+
+        <EditText
+            android:id="@+id/lostLocation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Location Lost"
+            android:inputType="text"
+            android:imeOptions="actionSend"
+            android:padding="15dp"/>
+        <EditText
+            android:id="@+id/lostContactInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contact Information"
+            android:inputType="text"
+            android:imeOptions="actionSend"
+            android:padding="15dp"/>
+
+        <EditText
+            android:id="@+id/lTag1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Item Descriptors"
+            android:imeOptions="actionSend"
+            android:inputType="text"
+            android:padding="15dp" />
+        <EditText
+            android:id="@+id/lTag2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Item Descriptors"
+            android:inputType="text"
+            android:imeOptions="actionSend"
+            android:padding="15dp"/>
+
+        <EditText
+            android:id="@+id/lTag3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Item Descriptors"
+            android:imeOptions="actionSend"
+            android:inputType="text"
+            android:padding="15dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/lostEnter"
+        android:layout_width="118dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="51dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+</android.support.constraint.ConstraintLayout>
